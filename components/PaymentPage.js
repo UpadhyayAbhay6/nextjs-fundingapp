@@ -1,5 +1,6 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react-hooks/exhaustive-deps'
 import Script from 'next/script'
 import { fetchuser, fetchpayments, initiate } from '@/actions/useractions'
 import { useSession } from 'next-auth/react'
