@@ -108,11 +108,12 @@ const PaymentPage = ({ username }) => {
                     <div className='supporters w-1/2 bg-slate-900 rounded-lg p-10'>
                         <h2 className='text-2xl font-bold my-5'>Supporters</h2>
                         <ul className='mx-3 text-sm w-full'>
-                            {payments.length == 0 && <li className='flex items-center text-lg gap-0'>No Payments Yet!<img width={45} className='rounded-full' src='./sad.gif' alt=''/></li>}
+                            {payments.length == 0 && <li className='flex items-center text-lg gap-0'>No Payments Yet!<Image width={45} className='rounded-full' src='./sad.gif' alt=''/></li>}
                             {payments.map((p, i) => {
                                 return <li key={i} className='my-4 flex gap-2 items-center'>
                                     <Image width={33} src="./avatar.gif" alt="" />
-                                    <span className='flex gap-1 items-center'><span><span className='font-bold italic'>{p.name}</span> from <span className='font-bold italic'>{p.address}</span> donated <span className='font-bold'> ₹{p.amount} </span> with a message "{p.message}" </span><img className='rounded-full' width={30} src='./heart.gif' alt='' /></span>
+                                    <span className='flex gap-1 items-center'><span><span className='font-bold italic'>{p.name}</span> from <span className='font-bold italic'>{p.address}</span> donated <span className='font-bold'> ₹{p.amount} </span> with a message "{p.message}" </span><Image
+                                     className='rounded-full' width={30} src='./heart.gif' alt='' /></span>
                                 </li>
                             })}
                         </ul>
