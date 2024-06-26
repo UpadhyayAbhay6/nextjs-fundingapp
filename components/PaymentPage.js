@@ -95,9 +95,9 @@ const PaymentPage = ({ username }) => {
             <Script src="./https://checkout.razorpay.com/v1/checkout.js"></Script>
 
             <div className='cover w-full relative'>
-                <img className='object-cover w-full h-[350]' src={currentUser.coverpic} alt='' />
+                <Image className='object-cover w-full h-[350]' src={currentUser.coverpic} alt='' />
                 <div className='absolute -bottom-20 right-[45%] rounded-full border-white overflow-hidden border-2 size-32'>
-                    <img className='rounded-full object-cover size-32' height={128} width={128} src={currentUser.profilepic} alt='' />
+                    <Image className='rounded-full object-cover size-32' height={128} width={128} src={currentUser.profilepic} alt='' />
                 </div>
             </div>
             <div className='info flex justify-center items-center my-24 flex-col gap-2'>
@@ -111,7 +111,7 @@ const PaymentPage = ({ username }) => {
                             {payments.length == 0 && <li className='flex items-center text-lg gap-0'>No Payments Yet!<img width={45} className='rounded-full' src='./sad.gif' alt=''/></li>}
                             {payments.map((p, i) => {
                                 return <li key={i} className='my-4 flex gap-2 items-center'>
-                                    <img width={33} src="./avatar.gif" alt="" />
+                                    <Image width={33} src="./avatar.gif" alt="" />
                                     <span className='flex gap-1 items-center'><span><span className='font-bold italic'>{p.name}</span> from <span className='font-bold italic'>{p.address}</span> donated <span className='font-bold'> ₹{p.amount} </span> with a message "{p.message}" </span><img className='rounded-full' width={30} src='./heart.gif' alt='' /></span>
                                 </li>
                             })}
