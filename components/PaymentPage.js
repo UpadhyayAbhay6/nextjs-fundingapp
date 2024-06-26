@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify';
 import { useRouter } from 'next/navigation'
 import { notFound } from "next/navigation";
+import Image from 'next/image'
 
 const PaymentPage = ({ username }) => {
     const [paymentform, setPaymentform] = useState({name: "", message: "", amount: "", address: ""})
