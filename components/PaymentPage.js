@@ -92,7 +92,7 @@ const PaymentPage = ({ username }) => {
                 theme="light" />
             {/* Same as */}
             <ToastContainer />
-            <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
+            <Script src="./https://checkout.razorpay.com/v1/checkout.js"></Script>
 
             <div className='cover w-full relative'>
                 <img className='object-cover w-full h-[350]' src={currentUser.coverpic} alt='' />
