@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="flex justify-center flex-col gap-4 items-center text-white h-[44vh]">
         <div className="font-bold flex gap-2 text-5xl justify-center items-center">Collecting Fund for Helping<span>
-          <img className="rounded-full bg-gray-600" width={60} src="/fundingsymbol.png"
+          <img className="rounded-full bg-gray-600" width={60} src="./fundingsymbol.png"
             alt="" /></span></div>
         <p>
           A crowdfunding platform for creators. Get funded by your fans and followers. Start now!
