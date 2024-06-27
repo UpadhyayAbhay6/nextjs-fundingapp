@@ -1,6 +1,5 @@
 "use client"
-import React, { useState } from 'react'
-import { useEffect } from 'react-hooks/exhaustive-deps'
+import React, { useState, useEffect } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { fetchuser, updateProfile } from '@/actions/useractions'
